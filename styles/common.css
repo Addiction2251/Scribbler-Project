@@ -1,0 +1,19 @@
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    font-family: 'Montez', cursive;
+    font-size: 30px;
+    color: blue;
+    margin: 0;
+}
+
+.sub-title {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 10;
+    color: black;
+    margin: 0;
+}
