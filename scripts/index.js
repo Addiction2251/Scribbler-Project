@@ -15,3 +15,12 @@ openModal = modal => {
 closeModal = modal => {
     modal.style.display = "none";
 };
+// Add events to the buttons
+createPostBtn.addEventListener("click", () => openModal(createPostModal));
+closeCreatePost.addEventListener("click", () => closeModal(createPostModal));
+
+window.addEventListener("click", function(event) {
+    if (event.target == createPostModal) {
+        createPostModal.style.display = "none";
+    }
+});
