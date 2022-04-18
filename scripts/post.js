@@ -12,3 +12,14 @@ window.onload = function() {
     titleNode.innerHTML = titleContent;
     contentNode.innerHTML = postsContent;
 };
+document.addEventListener("click", function(e) {
+            if (hasClass(e.target, "saved")) {
+                // When edit button is clicked
+                e.target.classList.remove("saved");
+                e.target.classList.add("unsaved");
+                e.target.innerHTML = 'Save <i class="fa fa-save"></i>';
+                titleNode.setAttribute("contenteditable", true);
+                titleNode.classList.add("editable");
+                contentNode.setAttribute("contenteditable", true);
+                contentNode.classList.add("editable");
+            }
